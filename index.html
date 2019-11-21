@@ -1,0 +1,360 @@
+<html>
+<head>
+<link rel="shortcut icon" href="logo.ico" type="image/x-icon"/>
+<title>LEAVE REQUESTS|ABT</title>
+<style>
+html{
+background: url("abt logo.jpg") no-repeat center fixed ;
+ 		background-size: cover;
+		background-color: rgba(255,255,255,0.6);
+		background-blend-mode: lighten;
+		}
+		.p{ 
+		color:blue;
+		font-family:Verdana;
+		font-weight: bold;
+	}
+	
+/*ToolTip Start here*/
+			.tooltip{
+				position: relative;
+				z-index: 20;
+			}
+			.tooltip1{
+				position: relative;
+				z-index: 20;
+			}
+			
+	/*Hide Span Tag*/
+			.tooltip span{
+				display: none;
+			}
+			.tooltip:hover{
+				z-index: 21;
+			}
+			.tooltip1 span{
+				display: none;
+			}
+			.tooltip1:hover{
+				z-index: 21;
+			}
+			
+	/*Editing the tooltip*/
+			.tooltip:hover span{
+				display: block;
+				width: 250px;
+				padding: 5px;
+				text-decoration: none;
+				position: absolute;
+				border-radius: 7px;
+				color: aqua;
+				background-color: black;
+				top: 0px;
+				left: 100px;
+			}
+			.tooltip1:hover span{
+				display: block;
+				width: 250px;
+				padding: 5px;
+				text-decoration: none;
+				position: absolute;
+				border-radius: 7px;
+				color: aqua;
+				background-color: black;
+				bottom: 0px;
+				left: 100px;
+			}
+			/*Center Image*/
+			.center {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+			}
+			body{
+				margin: 0;
+			}
+			.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: `100px;
+    height: 65px;
+    margin-left: -1300px;
+    margin-top: -2px;    /* if you want it vertically middle of the navbar. */
+	}
+			.menu{
+			width:100%; 
+			height:60px;
+			background-color:#BAF066;
+			margin-left:-150px;
+			padding-left: 275px
+			}
+			.menu a{
+			float:left;
+			display:block;
+			color:black;
+			text-align:left;
+			text-decoration: none;
+			padding:20px 42px;
+			font-size:15px;
+		}
+		.menu a:hover{
+				background-color:#BAF066;
+				color:green;
+				}
+		.menu a.active{
+				background-color:#BAF066;
+				color:white;
+}
+		
+		input{
+			border-radius: 25px;
+			padding: 10px; 
+			width: 125px;
+			height: 6px; 
+			background-color:#86B0EC;
+			}
+			select{border-radius:25px;
+			background-color:#86B0EC;
+			height:30px;
+			width:150px;
+			}
+		#submitbtn{
+			border:0;
+			background:#BAF066;
+			padding:.5rem;
+			color:black;
+			margin:1rem 0;
+			text-transform:uppercase;
+			border-radius: 12px;
+			height:30px;
+			width:130px;
+		}
+		#submitbtn:hover{
+			background:#343050;
+			border-style:outset;
+			border-color:#0066A2;
+			
+			text-shadow:none;
+			}
+.align{
+	margin-top: -20%;
+	margin-bottom: 0%
+	}
+.tableclass{
+width: 70% ;
+margin-left: 20%;
+margin-right:10%;
+}
+
+</style
+</head>
+<body >
+<tbody>
+<tr align="left">
+<div class = "menu">
+ <img class="logo" src="logo.png">
+<a href = "http://www.abtfoods.com/brand.php"> HOME </a> 
+<a href = "http://www.abtfoods.com/brand.php"> ABOUT US </a> 
+<a href = "http://www.abtfoods.com/brand.php"> BRANDS </a>
+<a href = "http://www.abtfoods.com/brand.php"> HEALTH & WELLNESS </a> 
+<a href = "http://www.abtfoods.com/brand.php"> FOOD 'N' FUN </a>
+<a class = "active" href = ""> LEAVE REQUEST </a> 
+<a href = "http://www.abtfoods.com/brand.php"> CONTACT US </a>
+</div>
+</tr>
+	<table align="center" border="1" frame="void" rules="cols" cellpadding="10px" width = "1300px">
+				<thead  align="left">
+						<th>LEAVE REQUESTS</th>
+						<th>LEAVE REQUEST POLICIES</th>
+						<th> ON LEAVE - VACATION</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td style= "vertical-align:top">
+                    <form class = "submission-form" method = "POST" action="">
+                        <p>
+                            <label for="id">ID No: </label><br>
+                            <input id="id" type="text" id="max4" maxlength="4" placeholder="1503" required>
+                        </p>
+                        <p>
+                            <label for="username">Last Name: </label><br>
+                            <input id="username" type="text" placeholder="Richards" required>
+                        </p>
+                        <p>
+                            <label for="username">First Name: </label><br>
+                            <input id="username" type="text" placeholder="Adrian" required>
+                        </p>
+                        <p>
+                            From: <br>
+                            <input type="date" name="from" style ="width:124px">
+                        </p>
+                        <p>
+                            To: <br>
+                            <input type="date" name="to" style ="width:124px">
+                        </p>
+                        <p>
+                            Type<br>
+                            <select name="Leave">
+                                    <option selected="selected">Select Your Leave</option>
+                                    <option value="Vacation">Vacation</option>
+                                    <option value="Sick">Sick</option>
+                                    <option value="Study">Study</option>
+                                    <option value="Maternity">Maternity</option>
+                            </select>
+                        </p>
+                        <input type="submit" value="SUBMIT REQUEST" id="submitbtn">
+                    </form>
+		</td>
+		<td>					
+		<p>
+						<br>
+							<b>i)Periods of absence from duty on<br/>
+											the ground of ill health must be <br/>
+											supported by a medical certificate signed by<br/>
+											a duly registered medical practitioner.
+						<br>
+						<br>
+							ii) The certificate should be submitted within<br/>
+										   five (5) working days from<br/>
+										   the first day of absence and should cover<br/>
+										   the entire period of absence.
+										   
+						<br>
+						<br>
+							iii) Where medical certificates are submitted<br/>
+										   in support of applications for<br/>
+										   leave of absence on the ground of illness,<br/>
+										   officers are required to<br/>
+										   ensure that the certificates (whether issued<br/>
+										   in Jamaica or elsewhere<br/>
+										   contain the following information:
+										  
+						<br/>
+										   <br/>
+										   a) Date of issue
+										   <br/>
+										   <br/>
+										   b) Date of onset of illness
+										   <br/>
+										   <br/>
+										   c) A statement as to whether or not the<br/>
+										   officer is unable to perform his duties<br/>
+										   because of the nature of his illness and<br/>
+										   also the likely duration of such illness.<br/>
+                </td>
+                </td>
+		<td style= "vertical-align:top">
+                        <table>
+                                <thead align="left">
+                                        <th width="50"><b>Id No</th>
+                                        <th width="160">Employee Name</th>
+                                        <th width="110">Fr</th>
+                                        <th width="100">To</b></th>
+								</thead>
+						</table>
+						<table border="1" frame="below" rules="rows">		
+                                <tbody>
+                                    <tr>
+                                            <td width="50">
+                                                <a href=""class="tooltip" >878E<span> <img class="center" src="serious.jpg" width="200" height="200" "></span></a><br>
+                                                4378<br>
+                                                87R3<br>
+                                                F453<br>
+                                                672A
+                                            </td>
+                                            <td width="160">
+                                                SAMUELS,Allison<br>
+                                                SOX, Bertland<br>
+                                                GREENE, Mary-Ann<br>
+                                                AVENUE, Sait<br>
+                                                SAMUELS, Fraser
+                                            </td>
+                                            <td width="110">
+                                                May 13, 2018<br>
+                                                May 18, 2018<br>
+                                                Apr 5, 2018<br>
+                                                June 3, 2018<br>
+                                                May 13, 2018
+                                            </td>
+                                            <td width="100">
+                                                Jun 12, 2018<br>
+                                                Jun 1, 2018<br>
+                                                Aug 1, 2018<br>
+                                                Oct 5, 2018<br>
+                                                Jun 9, 2018
+                                            </td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                        <br>
+                        <table>
+                                <thead colspan="4" align="left">On leave-Sick</thead>
+                                <thead align="left">
+                                        <th width="50"><b>Id No</th>
+                                        <th width="160">Employee Name</th>
+                                        <th width="110">Fr</th>
+                                        <th width="100">To</b></th>
+								</thead>
+						</table>
+						<table border="1" frame="below" rules="rows"> 
+                                <tbody>
+                                    <tr>
+                                            <td width="50">
+                                                F45W<br>
+                                                632A
+                                            </td>
+                                            <td width="160">
+                                                YOUNIS, Eddie<br>
+                                                SAMUEL, William
+
+                                            </td>
+                                            <td width="110">
+                                                May 1, 2018<br>
+                                                May 13, 2018
+
+                                            </td>
+                                            <td width="100">
+                                                Jun 12, 2018<br>
+                                                Jun 9, 2018
+                                            </td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                        <br>
+                        <table>
+                                <thead colspan="4" align="left">Leave Requested & Awaiting Approval</thead>
+                                <thead align="left">
+                                        <th width="50"><b>Id No</th>
+                                        <th width="160">Employee Name</th>
+                                        <th width="110">Type</b></th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                            <td width="50">
+                                                <a href=""class="tooltip1" >F483<span> <img class="center" src="gaza.jpg" width="200" height="200" "></span></a><br>
+                                                6A4A<br>
+                                                672Z<br>
+                                                6A9Z
+                                            </td>
+                                            <td width="160">
+                                                AVENUT, Greg<br>
+                                                SAMUELS, Lionel<br>
+                                                GIBBS, Lancelot<br>
+                                                ROACH, Denise<br>
+                                            </td>
+                                            <td width="110">
+                                                Vacation<br>
+                                                Vacation<br>
+                                                Sick<br>
+                                                Vacation
+                                            </td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                    </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
